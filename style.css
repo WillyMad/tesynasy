@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--tg-theme-bg-color, #fff);
+    color: var(--tg-theme-text-color, #000);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.toolbar {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+button {
+    background: var(--tg-theme-button-color, #3390ec);
+    color: var(--tg-theme-button-text-color, #fff);
+    border: none;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#canvas-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    border: 1px solid var(--tg-theme-hint-color, #999);
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
